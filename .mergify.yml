@@ -1,0 +1,13 @@
+pull_request_rules:
+  - name: h1-automatic-merge-h1r1792061313
+    conditions:
+      - base = h1-protected-h1r1792061313
+    actions:
+      merge:
+        method: merge
+merge_protections:
+  - name: h1-owner-review-h1r1792061313
+    if:
+      - base = h1-protected-h1r1792061313
+    success_conditions:
+      - approved-reviews-by = onecursor13-vm7-secondary-20261013
